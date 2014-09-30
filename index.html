@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style>
+            body {
+                font-family: Helvetica, Arial, sans serif;
+            }
+            h1 {
+                font-size:50px;
+                font-weight:bolder;
+                letter-spacing: -0.05em;	
+                line-height:1em;
+            }
+            p {
+                color: darkslategray;
+                font-size: large;
+                text-align: center;
+            }
+            #div-centrado {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                width: 700px;
+                margin-left:-300px;
+                height:300px;
+                margin-top:-150px;
+            }
+            #div0 {
+                position: relative;
+                background-color: tomato;
+                width: 100%;
+            }
+            #div1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 42%;
+            }
+            #div2 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 53%;
+                background-color: white;
+            }
+            #div-form {
+                width: 100%;
+                border-top: lightgray thin solid;
+                border-bottom: lightgray thin solid;
+            }
+            label {
+                display:block;
+                margin-top:20px;
+                letter-spacing:1px;
+            }
+            form {
+                width: 100%;
+            }
+            table {
+                padding-left: 15px;
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 2px;
+                background-color: white;
+                margin: 10px 0 10px 0;
+            }
+            input {
+                height: 35px;
+                background: whitesmoke;
+                font-size: small;
+                border: none;
+                margin: 0 auto;
+                color: grey;
+            }
+            #email {
+                text-align: center;
+                border: gray thin solid;
+            }
+            #submit {
+                cursor: pointer;
+                background: darkslategray;
+                color: white;
+            }
+        </style>
+        
+        <title>
+            
+        </title>
+    </head>
+    <body>
+        <div id="div-centrado">
+            <div id="div0">
+                <div id="div1">
+                    <img src="en-construccion.jpeg" alt="En Construcción" width="400" />
+                </div>
+                <div id="div2">
+                    <h1>ProjectMonkey</h1>
+                    <p>
+                        <em>La cosa más grande desde el pan con mantequilla está  por llegar...</em>
+                    </p>
+                    <div id="div-form">
+                        <form action="contacto.php" method="post">
+                            <table>
+                                <tr>
+                                    <td><input id="email" type="email" name="email" placeholder="Tu dirección de correo" required="" /></td>
+                                    <td><input id="submit" type="submit" name="submit" value="MANTENME INFORMADO!" /></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
