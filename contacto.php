@@ -6,13 +6,7 @@ $header = 'Has recibido un correo de '.$email;
 $titulo = 'ASUNTO DEL MENSAJE';
 $msjCorreo = 'El correo '.$email.' está interesado en el sitio!';
 
-if ($_POST['submit']) {
-    echo $email.'<br/>';
-    echo $para.'<br/>';
-    echo $header.'<br/>';
-    echo $titulo.'<br/>';
-    echo $msjCorreo.'<br/>';
-    
+if ($_POST['submit']) {    
     if (mail($para, $titulo, $msjCorreo, $header)) {
         echo   "<script language='javascript'> 
                     alert('Mensaje enviado, muchas gracias.'); 
