@@ -7,10 +7,11 @@
                 font-family: Helvetica, Arial, sans serif;
             }
             h1 {
-                font-size:50px;
-                font-weight:bolder;
+                font-size: 50px;
+                font-weight: bolder;
                 letter-spacing: -0.05em;	
-                line-height:1em;
+                line-height: 1em;
+                margin-left: -10px;
             }
             p {
                 color: darkslategray;
@@ -21,10 +22,11 @@
                 position: absolute;
                 top: 30%;
                 left: 50%;
-                width: 700px;
-                margin-left:-300px;
-                height:300px;
+                width: 758px;
+                height: 600px;
+                margin-left:-377px;
                 margin-top:-150px;
+                background-color: white;
             }
             #div0 {
                 position: relative;
@@ -39,7 +41,7 @@
             }
             #div2 {
                 position: absolute;
-                top: 0;
+                top: 40px;
                 right: 0;
                 width: 53%;
                 background-color: white;
@@ -48,6 +50,10 @@
                 width: 100%;
                 border-top: lightgray thin solid;
                 border-bottom: lightgray thin solid;
+            }
+            img {
+                width: 450px;
+                height: 450px;
             }
             label {
                 display:block;
@@ -72,14 +78,16 @@
                 border: none;
                 margin: 0 auto;
                 color: grey;
+                width: 100%;
             }
             #email {
                 text-align: center;
                 border: gray thin solid;
+                
             }
             #submit {
                 cursor: pointer;
-                background: darkslategray;
+                background: darkred;
                 color: white;
             }
         </style>
@@ -92,19 +100,19 @@
         <div id="div-centrado">
             <div id="div0">
                 <div id="div1">
-                    <img src="en-construccion.jpeg" alt="En Construcción" width="400" />
+                    <img src="en-construccion.jpeg" alt="En Construcción" />
                 </div>
                 <div id="div2">
-                    <h1>ProjectMonkey</h1>
+                    <h1>BlueWhaleProject</h1>
                     <p>
-                        <em>La cosa más grande desde el pan con mantequilla está  por llegar...</em>
+                        <em>The greatest thing since powdered toasts has finally arrived.</em>
                     </p>
                     <div id="div-form">
                         <form action="contacto.php" method="post">
                             <table>
                                 <tr>
                                     <td><input id="email" type="email" name="email" placeholder="Tu dirección de correo" required="" /></td>
-                                    <td><input id="submit" type="submit" name="submit" value="MANTENME INFORMADO!" /></td>
+                                    <td><input id="submit" type="submit" name="submit" value="KEEP ME INFORMED!" /></td>
                                 </tr>
                             </table>
                         </form>
