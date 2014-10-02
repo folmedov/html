@@ -2,18 +2,17 @@
 
 $email = $_POST['email'];
 $para = 'f.olmedo.v@gmail.com';
-$header = 'Has recibido un correo de '.$email;
-$titulo = 'ASUNTO DEL MENSAJE';
+$titulo = 'Un nuevo mensaje en BlueWhaleProject';
 $msjCorreo = 'El correo '.$email.' está interesado en el sitio!';
 
 if ($_POST['submit']) {    
-    if (mail($para, $titulo, $msjCorreo, $header)) {
+    if (mail($para, $titulo, $msjCorreo)) {
         echo   "<script language='javascript'> 
-                    alert('Mensaje enviado, muchas gracias.'); 
-                    window.location.href = 'http://208.69.31.31';
+                    alert('The email has been sent. Thank you very much!'); 
+                    window.location.href = 'http://192.99.154.165';
                 </script>";
     } else {
-        echo 'Falló el envio';
+        echo 'Ups! Something goes wrong. Try it later.';
     }
 }
 
